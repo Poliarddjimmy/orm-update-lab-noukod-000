@@ -72,7 +72,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql, name).map do |student|
-      self.new_from_db(tudent)
+      self.new_from_db(student)
     end.first
   end
 end
